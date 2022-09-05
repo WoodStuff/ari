@@ -1,2 +1,2 @@
-# ari
-A r i
+# ARI: The Game
+This is a game that
