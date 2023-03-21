@@ -1,2 +1,2 @@
 # ari
-2d survival game
+2d survival game rpg thing
