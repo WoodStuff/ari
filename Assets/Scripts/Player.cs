@@ -13,7 +13,6 @@ public class Player : MonoBehaviour
 	public float raycastOffset = 0.51f;
 	public float rayDistance = 0.05f;
 
-	// Update is called once per frame
 	void Update()
 	{
 		Vector2 move = new(Input.GetAxisRaw("Horizontal"), 0);
