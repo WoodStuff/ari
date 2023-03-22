@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
 	void Update()
 	{
 		Vector2 move = new(Input.GetAxisRaw("Horizontal"), 0);
-		rigid.position += 5 * speed * Time.deltaTime * move;
+		rigid.AddRelativeForce(500 * speed * Time.deltaTime * move);
 
 		if (Input.GetAxisRaw("Jump") > 0 && GroundCheck() && rigid.velocity.y <= 0) rigid.velocity = new Vector2(rigid.velocity.x, jumpHeight * 5);
 		Debug.DrawRay(rigid.position - new Vector2(0.5f, raycastOffset), Vector2.down * new Vector2(0, rayDistance), Color.green);
